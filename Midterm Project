@@ -7,7 +7,9 @@ library(gridExtra) # This package was added to be able to use the grid.arrange f
 
 seasons <- 2014:2018 # The seasons that I picked to analyze shot charts for the 76ers
 
-court_url <- "https://t3.ftcdn.net/jpg/01/88/00/92/360_F_188009274_RCkdTSELKU66ZBC3Mu28XsEpNgMez6fH.jpg" # The url of the basketball court image that I choose for the graphics
+Sys.setenv("VROOM_CONNECTION_SIZE" = 5000000) # Code was running just fine until the morning of 4/3, then I got an error about needing to increase the buffer size? I had to to look up what this error even was because I have never gotten it before
+
+court_url <- "https://t3.ftcdn.net/jpg/01/88/00/92/360_F_188009274_RCkdTSELKU66ZBC3Mu28XsEpNgMez6fH.jpg" # The url of the basketball court image that I chose for the graphics
 court_img_path <- "court.jpg" # The path of the image that I chose
 court_img <- image_read(court_img_path) # This is added because I need to read the image path in order for it to be loaded into R for other manipulations to it
 court_img_rotated <- image_rotate(court_img, 90) # The image first came out horizontally orientated and I wanted it vertical to align with the data, so I rotated it 90 degrees
@@ -49,6 +51,7 @@ do.call(grid.arrange, c(shot_charts, ncol = 5)) # The do.call function is used h
 
 
 # Above and Beyond Option 1
+library(dplyr) # Needed to add this package in order to use the summarize function, although it was working without it yesterday
 
 shots_data <- teams_shots(teams = "Philadelphia 76ers", seasons = 2018, return_message = FALSE) # Retrieves data from nbastatR about the team shots for the 76ers for the season that I wanted. I added the return_message = FALSE because I did not want the extra, not important output that it gave me.
 
