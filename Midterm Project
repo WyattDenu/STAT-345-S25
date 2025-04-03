@@ -1,4 +1,4 @@
-```{r, fig.width=15, fig.height=8}
+```{r, fig.width=15, fig.height=8, warning = FALSE}
 library(nbastatR) # Loaded this package so that I can get access to the nba data that I used in this code
 library(ggplot2) # Loaded this package to be able to create the shot chart and adjust the appearance of it
 library(magick) # I used this package to be able to read the basketball court image and have the ability to rotate it 
