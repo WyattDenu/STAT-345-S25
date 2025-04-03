@@ -1,0 +1,42 @@
+---
+title: "Philadelphia 76ers Shot Charts Report (2013-2018)"
+author: "Wyatt Denu"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo=FALSE}
+knitr::include_graphics("C:/Users/wyatt/OneDrive/Pictures/Screenshots/Screenshot 2025-04-03 032430.png")
+```
+
+Key Findings:
+
+-   Heavy dose of shots taken in the paint
+
+-   Philly loves the three ball
+
+-   Inefficient from long distances
+
+-   Shooting just inside the three-point line is not a popular shot
+
+Key Findings (Detailed):
+
+-   **Top shot selection**: We can see from the plots that the 76ers like to take a majority of their shots when close to the rim; we can also see that they are making a high percentage of those shots because of the dense number of blue dots seen in the plot. I noticed that in the 16-17 and 17-18 seasons there are a denser amount of blue(made baskets) close to the hoop as compared to the other 3 seasons. This could very well be because of the emergence of the 7 footer Joel Embiid. He seems to be making a greater impact to the team than other big men have in years past.
+
+-   **Three-point shooting**: The 76ers seem to also like to shoot the three quite a bit. They will shoot it from just about anywhere around the arc. In seasons 2013-17, the team is making shots at every point on the arc pretty evenly distributed. This changes by just a little bit though; in the 2017-2018 season as there seems to be more shots made from three on the left side of the arc.
+
+-   **Shots beyond the three-point line**: A trend that is visible in all the five seasons shot charts is the inaccuracy in shots past the three-point line. This is a trend makes good sense because the farther back you are when shooting the basketball, the less likely chance you have of making the shot. These are also considered bad shots, so we see very few of them. Close to all of these shots were likely taken at the end of a period/half because players tend to chuck up last second heaves when the clock is about run out of time.
+
+-   **"The worst shot in basketball"**: The 76ers have made it clear that they have figured out to not take many attempts of what I consider to be one of the worst shots you can take in the game of basketball. Taking a shot that is just inside the three-point arc results in the longest possible distance to shoot a two-point shot when you could have taken one step back and taken the shortest distance possible for a three-point shot. This tells me that the 76ers are well coached and obtain awareness of where they are on the basketball court when shooting.
+
+------------------------------------------------------------------------
+
+```{r, echo = FALSE}
+knitr::include_graphics("C:/Users/wyatt/OneDrive/Pictures/Screenshots/Screenshot 2025-04-03 030741.png")
+```
+
+-   **Shot Distance Chart For Joel Embiid**: This graphic shows the relative distance for all the shots that Joel Embiid took in the 2017-18 season. The shots that appear closer to the hoop are the most green and slowly fade into yellow and red the farther he shoots. A big takeaway from this graphic is that he takes most of his shots very close to the basket. But if he decides to go long and shoot it from three, he loves to be on the top part of the arc. Embiid hardly ever shoots any threes from the corners.
